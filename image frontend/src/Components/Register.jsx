@@ -49,7 +49,7 @@ const Register = () => {
 
   return (
     <div className="flex items-center justify-end min-h-screen  bg-cover bg-center bg-no-repeat"style={{ backgroundImage: `url(${loginImage})` }}>
-    <div className="p-8 rounded-lg shadow-lg w-full md:w-1/2 max-w-sm">
+    <div className="p-8 rounded-lg shadow-lg w-full md:w-1/2 max-w-sm ">
       <h2 className="text-2xl font-bold mb-6 text-center">Register</h2>
       
       {error && <div className="text-red-500 mb-4">{error}</div>}

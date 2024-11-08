@@ -30,6 +30,9 @@ const Login = () => {
             console.error('Error logging in:', err);
           } 
       };
+      const handleClick = () => {
+        navigate('/password-reset'); // Replace with the actual route for the forgot password page
+      };
   return (
     <div className="flex min-h-screen items-center justify-center bg-cover bg-center bg-no-repeat"  style={{ backgroundImage: `url(${loginImage})` }}>
     {/* Left Side - Image */}
@@ -93,7 +96,7 @@ const Login = () => {
             <button
               type="button"
               className="text-sm font-medium text-blue-600 hover:text-blue-500"
-            >
+              onClick={handleClick} >
               Forgot password?
             </button>
           </div>
